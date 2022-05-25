@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BuscadorDeCep.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="#ffd400" Padding="24" CornerRadius="0">
+            <Label Text="Consulte seu cep" HorizontalTextAlignment="Center" TextColor="#002c54" FontSize="36"/>
+        </Frame>
+
+        <Label></Label>
+        <Label x:Name="lblCep" Text="CEP:" FontSize="19" ></Label>
+        <Entry x:Name="entCep" Placeholder="Digite o CEP desejado..." MaxLength="8"  Keyboard="Numeric" FontSize="19" ></Entry>
+        <Label></Label>
+        <Button x:Name="btnProcurar" Text="Procurar" TextColor="#ffd400" BackgroundColor="#002c54" FontSize="17" Clicked="btnProcurar_Clicked"></Button>
+
+        <Label></Label>
+        <Label x:Name="lblResult" Text="Resultado da busca abaixo!" TextColor="#002c54" FontSize="19" ></Label>
+        <Label></Label>
+
+
+        <Label  Text="CEP:" FontSize="17" TextColor="#002c54"></Label>
+        <Label x:Name="lblCep2" FontSize="16" ></Label>
+
+        <Label  Text="Estado:" FontSize="17" TextColor="#002c54"></Label>
+        <Label x:Name="lblEstado" FontSize="16" ></Label>
+
+        <Label  Text="Cidade" FontSize="17" TextColor="#002c54" ></Label>
+        <Label x:Name="lblCidade" FontSize="16" ></Label>
+
+        <Label  Text="Bairro" FontSize="17" TextColor="#002c54" ></Label>
+        <Label x:Name="lblBairro" FontSize="16" ></Label>
+
+        <Label Text="Rua" FontSize="17" TextColor="#002c54"  ></Label>
+        <Label x:Name="lblRua" FontSize="16" ></Label>
+
+
+    </StackLayout>
+
+</ContentPage>
